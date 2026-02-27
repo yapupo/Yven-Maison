@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* LUME Brand Palette */
+    --background: 0 0% 92%; /* Platinum #EBEBEB */
+    --foreground: 200 78% 7%; /* Ink Black #04151F */
+
+    --card: 0 0% 92%;
+    --card-foreground: 200 78% 7%;
+
+    --popover: 0 0% 92%;
+    --popover-foreground: 200 78% 7%;
+
+    --primary: 185 70% 20%; /* Dark Teal #0F5057 */
+    --primary-foreground: 0 0% 92%;
+
+    --secondary: 200 78% 7%; /* Ink Black */
+    --secondary-foreground: 0 0% 92%;
+
+    --muted: 0 0% 85%;
+    --muted-foreground: 200 20% 40%;
+
+    --accent: 185 70% 20%;
+    --accent-foreground: 0 0% 92%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 92%;
+
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 185 70% 20%;
+
+    --radius: 0rem;
+
+    /* Custom LUME tokens */
+    --ink: 200 78% 7%;
+    --platinum: 0 0% 92%;
+    --teal: 185 70% 20%;
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .text-platinum {
+    color: hsl(var(--platinum));
+  }
+
+  .text-teal {
+    color: hsl(var(--teal));
+  }
+
+  .text-ink {
+    color: hsl(var(--ink));
+  }
+
+  .bg-ink {
+    background-color: hsl(var(--ink));
+  }
+
+  .bg-platinum {
+    background-color: hsl(var(--platinum));
+  }
+
+  .bg-teal {
+    background-color: hsl(var(--teal));
+  }
+
+  .border-platinum {
+    border-color: hsl(var(--platinum) / 0.2);
+  }
+
+  .border-platinum-strong {
+    border-color: hsl(var(--platinum) / 0.4);
+  }
+
+  /* Scroll indicator animation */
+  @keyframes scroll-bounce {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(8px); opacity: 0.5; }
+  }
+
+  .animate-scroll-bounce {
+    animation: scroll-bounce 2s ease-in-out infinite;
+  }
+
+  /* Masonry layout */
+  .masonry-grid {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+
+  .masonry-grid > * {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      columns: 3;
+    }
+  }
+}
