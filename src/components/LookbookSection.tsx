@@ -8,9 +8,9 @@ import lookbook5 from "@/assets/lookbook-5.jpg";
 import lookbook6 from "@/assets/lookbook-6.jpg";
 
 const lookbookItems = [
-  { src: lookbook1, concept: "Textura Noturna", collection: "Essentials" },
+  { src: lookbook1, concept: "Jardim Secreto", collection: "Essentials" },
   { src: lookbook2, concept: "Primeira Luz", collection: "Infância" },
-  { src: lookbook3, concept: "Silhueta Urbana", collection: "Juventude" },
+  { src: lookbook3, concept: "Ninho Quente", collection: "Juventude" },
   { src: lookbook4, concept: "Algodão Orgânico", collection: "Materialidade" },
   { src: lookbook5, concept: "Campo Dourado", collection: "Lifestyle" },
   { src: lookbook6, concept: "Primeiros Passos", collection: "Bebê" },
@@ -44,7 +44,7 @@ const LookbookItem = ({
       >
         <motion.img
           src={item.src}
-          alt={`L U M E — ${item.concept}`}
+          alt={`Y V E N — ${item.concept}`}
           className="w-full h-full object-cover"
           animate={{ scale: hovered ? 1.05 : 1 }}
           transition={{ duration: 0.6 }}
@@ -52,17 +52,16 @@ const LookbookItem = ({
         />
       </div>
 
-      {/* Hover overlay */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.3 }}
-        className="absolute inset-0 bg-ink/60 flex flex-col items-center justify-center"
+        className="absolute inset-0 bg-deep-green/70 flex flex-col items-center justify-center"
       >
         <p className="font-serif text-cream text-lg md:text-xl italic tracking-wide">
           {item.concept}
         </p>
-        <p className="font-sans text-gold/60 text-xs tracking-[0.3em] uppercase mt-2 font-light">
+        <p className="font-sans text-cream/40 text-xs tracking-[0.3em] uppercase mt-2 font-light">
           {item.collection}
         </p>
       </motion.div>
@@ -78,10 +77,9 @@ const LookbookSection = () => {
     <section
       id="lookbook"
       ref={ref}
-      className="bg-ink py-24 md:py-40 px-6 md:px-12"
+      className="bg-forest py-24 md:py-40 px-6 md:px-12"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
@@ -89,19 +87,18 @@ const LookbookSection = () => {
           className="flex items-baseline justify-between mb-16"
         >
           <div>
-            <p className="text-gold/40 font-sans text-xs tracking-[0.5em] uppercase mb-4 font-light">
+            <p className="text-cream/25 font-sans text-xs tracking-[0.5em] uppercase mb-4 font-light">
               Lookbook
             </p>
             <h2 className="font-serif text-cream text-3xl md:text-4xl tracking-wide">
               Concept
             </h2>
           </div>
-          <p className="hidden md:block text-cream/25 font-sans text-xs tracking-[0.3em] uppercase font-light">
+          <p className="hidden md:block text-cream/20 font-sans text-xs tracking-[0.3em] uppercase font-light">
             SS 2025
           </p>
         </motion.div>
 
-        {/* Masonry grid */}
         <div className="masonry-grid">
           {lookbookItems.map((item, index) => (
             <LookbookItem key={index} item={item} index={index} />

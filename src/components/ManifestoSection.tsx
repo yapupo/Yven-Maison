@@ -11,7 +11,7 @@ const ManifestoSection = () => {
     <section
       id="manifesto"
       ref={ref}
-      className="relative bg-background pt-0 pb-24 md:pb-40 px-6 md:px-12 overflow-hidden"
+      className="relative bg-cream pt-0 pb-24 md:pb-40 px-6 md:px-12 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section label */}
@@ -19,7 +19,7 @@ const ManifestoSection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-forest/60 font-sans text-xs tracking-[0.5em] uppercase mb-16 font-light"
+          className="text-forest/50 font-sans text-xs tracking-[0.5em] uppercase mb-16 font-light"
         >
           Manifesto
         </motion.p>
@@ -35,7 +35,7 @@ const ManifestoSection = () => {
             <h2 className="font-serif text-forest text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide">
               Vestir é um ato
               <br />
-              <span className="italic text-gold">de pertencimento.</span>
+              <span className="italic">de pertencimento.</span>
             </h2>
           </motion.div>
 
@@ -45,8 +45,8 @@ const ManifestoSection = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="lg:col-span-5 flex items-end"
           >
-            <p className="font-sans text-foreground/50 text-sm md:text-base leading-relaxed tracking-wide font-light">
-              Cada peça L U M E nasce da intenção de acompanhar — não definir —
+            <p className="font-sans text-forest/50 text-sm md:text-base leading-relaxed tracking-wide font-light">
+              Cada peça Y V E N nasce da intenção de acompanhar — não definir —
               quem a veste. Do primeiro toque ao último olhar no espelho,
               acreditamos que conforto e design são indissociáveis.
             </p>
@@ -63,7 +63,7 @@ const ManifestoSection = () => {
           >
             <img
               src={manifesto1}
-              alt="L U M E — design consciente e contemporâneo"
+              alt="Y V E N — design consciente e contemporâneo"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -77,7 +77,7 @@ const ManifestoSection = () => {
           >
             <img
               src={manifesto2}
-              alt="L U M E — texturas e materialidade"
+              alt="Y V E N — texturas e materialidade"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -95,7 +95,7 @@ const ManifestoSection = () => {
             "Não criamos roupas para faixas etárias.
             Criamos para fases de luz."
           </p>
-          <div className="w-10 h-px bg-gold/40" />
+          <div className="w-10 h-px bg-forest/25" />
         </motion.div>
       </div>
     </section>

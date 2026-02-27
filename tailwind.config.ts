@@ -26,7 +26,7 @@ export default {
         ink: "hsl(var(--ink))",
         cream: "hsl(var(--cream))",
         forest: "hsl(var(--forest))",
-        gold: "hsl(var(--gold))",
+        "deep-green": "hsl(var(--deep-green))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

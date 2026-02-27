@@ -6,42 +6,42 @@
 
 @layer base {
   :root {
-    /* LUME Brand Palette — Cream / Gold / Forest / Noir */
-    --background: 40 30% 95%; /* Cream #F5F0E8 */
-    --foreground: 210 11% 11%; /* Deep Noir #1A1C1E */
+    /* YVEN Brand Palette — Forest Green / Cream / Deep Green */
+    --background: 114 22% 28%; /* Forest Green #3B5339 */
+    --foreground: 40 30% 94%; /* Cream #F4EFE6 */
 
-    --card: 40 30% 95%;
-    --card-foreground: 210 11% 11%;
+    --card: 114 22% 28%;
+    --card-foreground: 40 30% 94%;
 
-    --popover: 40 30% 95%;
-    --popover-foreground: 210 11% 11%;
+    --popover: 114 22% 28%;
+    --popover-foreground: 40 30% 94%;
 
-    --primary: 150 30% 28%; /* Forest Green #325C46 */
-    --primary-foreground: 40 30% 95%;
+    --primary: 40 30% 94%; /* Cream */
+    --primary-foreground: 114 22% 28%;
 
-    --secondary: 210 11% 11%; /* Deep Noir */
-    --secondary-foreground: 40 30% 95%;
+    --secondary: 112 18% 19%; /* Deep Green #2A3A28 */
+    --secondary-foreground: 40 30% 94%;
 
-    --muted: 40 15% 88%;
-    --muted-foreground: 210 5% 45%;
+    --muted: 114 15% 24%;
+    --muted-foreground: 40 20% 75%;
 
-    --accent: 42 60% 55%; /* Warm Gold #C6A44A */
-    --accent-foreground: 210 11% 11%;
+    --accent: 40 30% 94%;
+    --accent-foreground: 114 22% 28%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 30% 95%;
+    --destructive-foreground: 40 30% 94%;
 
-    --border: 40 15% 82%;
-    --input: 40 15% 82%;
-    --ring: 150 30% 28%;
+    --border: 114 15% 35%;
+    --input: 114 15% 35%;
+    --ring: 40 30% 94%;
 
     --radius: 0rem;
 
-    /* Custom LUME tokens */
-    --ink: 210 11% 11%;
-    --cream: 40 30% 95%;
-    --forest: 150 30% 28%;
-    --gold: 42 60% 55%;
+    /* Custom YVEN tokens */
+    --ink: 112 18% 19%;
+    --cream: 40 30% 94%;
+    --forest: 114 22% 28%;
+    --deep-green: 112 18% 19%;
 
     --font-serif: 'Cormorant Garamond', Georgia, serif;
     --font-sans: 'Jost', system-ui, sans-serif;
@@ -86,10 +86,6 @@
     color: hsl(var(--forest));
   }
 
-  .text-gold {
-    color: hsl(var(--gold));
-  }
-
   .text-ink {
     color: hsl(var(--ink));
   }
@@ -106,8 +102,8 @@
     background-color: hsl(var(--forest));
   }
 
-  .bg-gold {
-    background-color: hsl(var(--gold));
+  .bg-deep-green {
+    background-color: hsl(var(--deep-green));
   }
 
   .border-cream {
@@ -116,10 +112,6 @@
 
   .border-cream-strong {
     border-color: hsl(var(--cream) / 0.4);
-  }
-
-  .border-gold {
-    border-color: hsl(var(--gold) / 0.3);
   }
 
   /* Scroll indicator animation */

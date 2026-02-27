@@ -41,7 +41,6 @@ const CustomCursor = () => {
     };
   }, [visible]);
 
-  // Hide on touch devices
   if (typeof window !== "undefined" && "ontouchstart" in window) return null;
 
   return (
@@ -59,7 +58,7 @@ const CustomCursor = () => {
         transition={{ type: "spring", stiffness: 300, damping: 25, mass: 0.5 }}
         style={{
           borderRadius: "50%",
-          border: "1px solid hsl(42 60% 55% / 0.5)",
+          border: "1px solid hsl(40 30% 94% / 0.5)",
         }}
       />
       {/* Inner dot */}
@@ -76,7 +75,7 @@ const CustomCursor = () => {
           width: 6,
           height: 6,
           borderRadius: "50%",
-          backgroundColor: "hsl(42 60% 55%)",
+          backgroundColor: "hsl(40 30% 94%)",
         }}
       />
     </>
