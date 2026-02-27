@@ -17,7 +17,7 @@ const FooterSection = () => {
   };
 
   const inputClasses =
-    "w-full bg-transparent border-b border-platinum/20 text-platinum font-sans text-sm py-3 placeholder:text-platinum/25 focus:outline-none focus:border-teal transition-colors duration-300";
+    "w-full bg-transparent border-b border-cream/15 text-cream font-sans text-sm py-3 placeholder:text-cream/20 focus:outline-none focus:border-gold/50 transition-colors duration-300 font-light";
 
   return (
     <footer
@@ -33,10 +33,10 @@ const FooterSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <p className="text-platinum/30 font-sans text-xs tracking-[0.5em] uppercase mb-4">
+          <p className="text-gold/40 font-sans text-xs tracking-[0.5em] uppercase mb-4 font-light">
             Contato
           </p>
-          <h2 className="font-serif text-platinum text-3xl md:text-4xl tracking-wide">
+          <h2 className="font-serif text-cream text-3xl md:text-4xl tracking-wide">
             Fale Conosco
           </h2>
         </motion.div>
@@ -55,10 +55,10 @@ const FooterSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="py-12"
               >
-                <p className="font-serif text-teal text-xl italic">
+                <p className="font-serif text-gold text-xl italic">
                   Mensagem enviada com sucesso.
                 </p>
-                <p className="font-sans text-platinum/40 text-sm mt-2">
+                <p className="font-sans text-cream/35 text-sm mt-2 font-light">
                   Retornaremos em breve.
                 </p>
               </motion.div>
@@ -98,7 +98,7 @@ const FooterSection = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-teal text-platinum font-sans text-xs tracking-[0.3em] uppercase px-10 py-3.5 rounded-full hover:bg-teal/80 transition-colors duration-300 mt-4"
+                  className="bg-forest text-cream font-sans text-xs tracking-[0.3em] uppercase px-10 py-3.5 hover:bg-forest/80 transition-colors duration-300 mt-4 font-light"
                 >
                   Enviar
                 </button>
@@ -114,38 +114,38 @@ const FooterSection = () => {
             className="lg:col-span-5"
           >
             <div className="mb-12">
-              <p className="font-sans text-platinum/30 text-xs tracking-[0.3em] uppercase mb-4">
+              <p className="font-sans text-gold/35 text-xs tracking-[0.3em] uppercase mb-4 font-light">
                 Assessoria de Imprensa
               </p>
-              <p className="font-sans text-platinum/60 text-sm leading-relaxed">
+              <p className="font-sans text-cream/50 text-sm leading-relaxed font-light">
                 xxxxxx@xxxxx.xxx.xx
               </p>
             </div>
 
             <div className="mb-12">
-              <p className="font-sans text-platinum/30 text-xs tracking-[0.3em] uppercase mb-4">
+              <p className="font-sans text-gold/35 text-xs tracking-[0.3em] uppercase mb-4 font-light">
                 Parcerias Comerciais
               </p>
-              <p className="font-sans text-platinum/60 text-sm leading-relaxed">
+              <p className="font-sans text-cream/50 text-sm leading-relaxed font-light">
                 xxxxxx@xxxxx.xxx.xx
               </p>
             </div>
 
             <div>
-              <p className="font-sans text-platinum/30 text-xs tracking-[0.3em] uppercase mb-4">
+              <p className="font-sans text-gold/35 text-xs tracking-[0.3em] uppercase mb-4 font-light">
                 Social
               </p>
               <div className="flex items-center gap-5">
                 <a
                   href="#"
-                  className="text-platinum/40 hover:text-teal transition-colors"
+                  className="text-cream/35 hover:text-gold transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
                 <a
                   href="#"
-                  className="text-platinum/40 hover:text-teal transition-colors"
+                  className="text-cream/35 hover:text-gold transition-colors"
                   aria-label="Telegram"
                 >
                   <Send className="w-4 h-4" />
@@ -160,12 +160,12 @@ const FooterSection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-platinum/10"
+          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gold/10"
         >
-          <h3 className="font-serif text-platinum/30 text-lg tracking-[0.3em]">
+          <h3 className="font-serif text-gold/40 text-lg tracking-[0.3em]">
             L U M E
           </h3>
-          <p className="font-sans text-platinum/15 text-xs tracking-wider mt-4 md:mt-0">
+          <p className="font-sans text-cream/15 text-xs tracking-wider mt-4 md:mt-0 font-light">
             © 2025 L U M E. Todos os direitos reservados.
           </p>
         </motion.div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import LumeLogo from "./LumeLogo";
 
 const navLinks = [
   { label: "Conceito", href: "#manifesto" },
@@ -32,14 +33,14 @@ const Navbar = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-ink/90 backdrop-blur-md border-b border-platinum/10"
+            ? "bg-ink/90 backdrop-blur-md border-b border-cream/10"
             : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
           <button
             onClick={() => handleNavClick("#hero")}
-            className="text-platinum font-serif text-xl md:text-2xl tracking-[0.4em] font-medium"
+            className="text-gold font-serif text-xl tracking-[0.4em] font-light"
           >
             L U M E
           </button>
@@ -49,7 +50,7 @@ const Navbar = () => {
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="text-platinum/70 hover:text-platinum text-xs tracking-[0.2em] uppercase font-sans transition-colors duration-300"
+                className="text-cream/60 hover:text-gold text-xs tracking-[0.2em] uppercase font-sans font-light transition-colors duration-300"
               >
                 {link.label}
               </button>
@@ -58,21 +59,21 @@ const Navbar = () => {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-platinum"
+            className="md:hidden text-cream"
             aria-label="Menu"
           >
             <div className="flex flex-col gap-1.5">
               <motion.span
                 animate={menuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-                className="block w-6 h-px bg-platinum"
+                className="block w-6 h-px bg-cream"
               />
               <motion.span
                 animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
-                className="block w-6 h-px bg-platinum"
+                className="block w-6 h-px bg-cream"
               />
               <motion.span
                 animate={menuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-                className="block w-6 h-px bg-platinum"
+                className="block w-6 h-px bg-cream"
               />
             </div>
           </button>
@@ -94,7 +95,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 onClick={() => handleNavClick(link.href)}
-                className="text-platinum font-serif text-2xl tracking-[0.2em]"
+                className="text-cream font-serif text-2xl tracking-[0.2em]"
               >
                 {link.label}
               </motion.button>

@@ -11,7 +11,7 @@ const ManifestoSection = () => {
     <section
       id="manifesto"
       ref={ref}
-      className="relative bg-platinum pt-0 pb-24 md:pb-40 px-6 md:px-12 overflow-hidden"
+      className="relative bg-background pt-0 pb-24 md:pb-40 px-6 md:px-12 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section label */}
@@ -19,7 +19,7 @@ const ManifestoSection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-teal/60 font-sans text-xs tracking-[0.5em] uppercase mb-16"
+          className="text-forest/60 font-sans text-xs tracking-[0.5em] uppercase mb-16 font-light"
         >
           Manifesto
         </motion.p>
@@ -32,10 +32,10 @@ const ManifestoSection = () => {
             transition={{ duration: 1, delay: 0.2 }}
             className="lg:col-span-7"
           >
-            <h2 className="font-serif text-teal text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide">
+            <h2 className="font-serif text-forest text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide">
               Vestir é um ato
               <br />
-              <span className="italic">de pertencimento.</span>
+              <span className="italic text-gold">de pertencimento.</span>
             </h2>
           </motion.div>
 
@@ -45,7 +45,7 @@ const ManifestoSection = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="lg:col-span-5 flex items-end"
           >
-            <p className="font-sans text-ink/60 text-sm md:text-base leading-relaxed tracking-wide">
+            <p className="font-sans text-foreground/50 text-sm md:text-base leading-relaxed tracking-wide font-light">
               Cada peça L U M E nasce da intenção de acompanhar — não definir —
               quem a veste. Do primeiro toque ao último olhar no espelho,
               acreditamos que conforto e design são indissociáveis.
@@ -91,11 +91,11 @@ const ManifestoSection = () => {
           transition={{ duration: 1, delay: 0.9 }}
           className="max-w-2xl ml-auto"
         >
-          <p className="font-serif text-teal text-lg md:text-xl italic leading-relaxed tracking-wide mb-6">
+          <p className="font-serif text-forest text-lg md:text-xl italic leading-relaxed tracking-wide mb-6">
             "Não criamos roupas para faixas etárias.
             Criamos para fases de luz."
           </p>
-          <div className="w-10 h-px bg-teal/30" />
+          <div className="w-10 h-px bg-gold/40" />
         </motion.div>
       </div>
     </section>

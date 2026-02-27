@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
+import LumeLogo from "./LumeLogo";
 
 const fullSlogan = "A Luz de Cada Geração. Descubra.";
 
@@ -43,10 +44,10 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-25"
           src={heroVideo}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/40 to-ink" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/50 to-ink" />
       </div>
 
       {/* Subtle grain */}
@@ -63,36 +64,29 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="text-platinum/40 font-sans text-xs tracking-[0.5em] uppercase mb-8"
+          className="text-cream/30 font-sans text-xs tracking-[0.5em] uppercase mb-10 font-light"
         >
           Desde 2024
         </motion.p>
 
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1 }}
-          className="font-serif text-platinum text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.3em] font-medium mb-10"
+          className="mb-12"
         >
-          L U M E
-        </motion.h1>
-
-        <motion.div
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="w-16 h-px bg-teal mx-auto mb-10"
-        />
+          <LumeLogo variant="light" size="lg" />
+        </motion.div>
 
         {/* Typing slogan */}
         <div className="h-16 flex items-center justify-center">
-          <p className="font-sans text-platinum/80 text-lg sm:text-xl md:text-2xl tracking-[0.15em]">
+          <p className="font-sans text-cream/70 text-lg sm:text-xl md:text-2xl tracking-[0.15em] font-light">
             {displayedText}
             {!typingDone && (
               <motion.span
                 animate={{ opacity: [1, 0] }}
                 transition={{ duration: 0.6, repeat: Infinity, repeatType: "reverse" }}
-                className="inline-block w-[2px] h-5 bg-platinum/60 ml-1 align-middle"
+                className="inline-block w-[2px] h-5 bg-gold/60 ml-1 align-middle"
               />
             )}
           </p>
@@ -105,12 +99,12 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 4 }}
         onClick={handleScrollDown}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 cursor-pointer group"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group"
       >
-        <span className="text-platinum/30 font-sans text-[10px] tracking-[0.4em] uppercase group-hover:text-platinum/50 transition-colors">
+        <span className="text-cream/25 font-sans text-[10px] tracking-[0.4em] uppercase group-hover:text-gold/50 transition-colors font-light">
           Explore
         </span>
-        <ChevronDown className="w-4 h-4 text-platinum/30 animate-scroll-bounce group-hover:text-platinum/50 transition-colors" />
+        <ChevronDown className="w-4 h-4 text-gold/30 animate-scroll-bounce group-hover:text-gold/50 transition-colors" />
       </motion.button>
     </section>
   );
