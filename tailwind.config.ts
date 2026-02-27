@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Cormorant Garamond", "Georgia", "serif"],
+        sans: ["Jost", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -24,8 +24,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         ink: "hsl(var(--ink))",
-        platinum: "hsl(var(--platinum))",
-        teal: "hsl(var(--teal))",
+        cream: "hsl(var(--cream))",
+        forest: "hsl(var(--forest))",
+        gold: "hsl(var(--gold))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

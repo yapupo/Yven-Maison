@@ -33,7 +33,7 @@ const LookbookItem = ({
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: index * 0.1 }}
-      className="relative overflow-hidden cursor-pointer group"
+      className="relative overflow-hidden group"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -59,10 +59,10 @@ const LookbookItem = ({
         transition={{ duration: 0.3 }}
         className="absolute inset-0 bg-ink/60 flex flex-col items-center justify-center"
       >
-        <p className="font-serif text-platinum text-lg md:text-xl italic tracking-wide">
+        <p className="font-serif text-cream text-lg md:text-xl italic tracking-wide">
           {item.concept}
         </p>
-        <p className="font-sans text-platinum/50 text-xs tracking-[0.3em] uppercase mt-2">
+        <p className="font-sans text-gold/60 text-xs tracking-[0.3em] uppercase mt-2 font-light">
           {item.collection}
         </p>
       </motion.div>
@@ -89,14 +89,14 @@ const LookbookSection = () => {
           className="flex items-baseline justify-between mb-16"
         >
           <div>
-            <p className="text-platinum/30 font-sans text-xs tracking-[0.5em] uppercase mb-4">
+            <p className="text-gold/40 font-sans text-xs tracking-[0.5em] uppercase mb-4 font-light">
               Lookbook
             </p>
-            <h2 className="font-serif text-platinum text-3xl md:text-4xl tracking-wide">
+            <h2 className="font-serif text-cream text-3xl md:text-4xl tracking-wide">
               Concept
             </h2>
           </div>
-          <p className="hidden md:block text-platinum/30 font-sans text-xs tracking-[0.3em] uppercase">
+          <p className="hidden md:block text-cream/25 font-sans text-xs tracking-[0.3em] uppercase font-light">
             SS 2025
           </p>
         </motion.div>
