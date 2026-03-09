@@ -63,7 +63,7 @@ const ManifestoSection = () => {
           >
             <img
               src={manifesto1}
-              alt="Y V E N — design consciente e contemporâneo"
+              alt="YVEN — design consciente e contemporâneo"
               className="w-full h-full object-cover"
               loading="lazy"
             />
