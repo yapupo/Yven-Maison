@@ -35,7 +35,7 @@ const ManifestoSection = () => {
             <h2 className="font-serif text-forest text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide">
               Vestir é um ato
               <br />
-              <span className="italic">de pertencimento.</span>
+              <span className="italic text-gold">de pertencimento.</span>
             </h2>
           </motion.div>
 
@@ -46,7 +46,7 @@ const ManifestoSection = () => {
             className="lg:col-span-5 flex items-end"
           >
             <p className="font-sans text-forest/50 text-sm md:text-base leading-relaxed tracking-wide font-light">
-              Cada peça Y V E N nasce da intenção de acompanhar — não definir —
+              Cada peça YVEN nasce da intenção de acompanhar — não definir —
               quem a veste. Do primeiro toque ao último olhar no espelho,
               acreditamos que conforto e design são indissociáveis.
             </p>
@@ -63,7 +63,7 @@ const ManifestoSection = () => {
           >
             <img
               src={manifesto1}
-              alt="Y V E N — design consciente e contemporâneo"
+              alt="YVEN — design consciente e contemporâneo"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -77,7 +77,7 @@ const ManifestoSection = () => {
           >
             <img
               src={manifesto2}
-              alt="Y V E N — texturas e materialidade"
+              alt="YVEN — texturas e materialidade"
               className="w-full h-full object-cover"
               loading="lazy"
             />

@@ -44,7 +44,7 @@ const LookbookItem = ({
       >
         <motion.img
           src={item.src}
-          alt={`Y V E N — ${item.concept}`}
+          alt={`YVEN — ${item.concept}`}
           className="w-full h-full object-cover"
           animate={{ scale: hovered ? 1.05 : 1 }}
           transition={{ duration: 0.6 }}
@@ -61,7 +61,8 @@ const LookbookItem = ({
         <p className="font-serif text-cream text-lg md:text-xl italic tracking-wide">
           {item.concept}
         </p>
-        <p className="font-sans text-cream/40 text-xs tracking-[0.3em] uppercase mt-2 font-light">
+        <div className="w-8 h-px bg-gold/50 mt-2 mb-2" />
+        <p className="font-sans text-gold-light/60 text-xs tracking-[0.3em] uppercase font-light">
           {item.collection}
         </p>
       </motion.div>

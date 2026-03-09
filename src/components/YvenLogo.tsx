@@ -34,15 +34,15 @@ const YvenLogo = ({ variant = "light", size = "md", className = "" }: YvenLogoPr
 
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <h1 className={`font-serif ${sizeClasses[size]} ${textColor} tracking-[0.5em] font-light`}>
-        Y V E N
+      <h1 className={`font-serif ${sizeClasses[size]} ${textColor} tracking-[0.25em] font-light`}>
+        YVEN
       </h1>
 
       {/* Decorative line with diamond */}
       <div className="flex items-center gap-3 mt-3">
-        <div className={`${lineWidths[size]} h-px ${lineColor}`} />
-        <span className={`${diamondColor} text-[7px]`}>◆</span>
-        <div className={`${lineWidths[size]} h-px ${lineColor}`} />
+        <div className={`${lineWidths[size]} h-px bg-gold/40`} />
+        <span className="text-gold text-[7px]">◆</span>
+        <div className={`${lineWidths[size]} h-px bg-gold/40`} />
       </div>
 
       <p className={`font-sans ${subtitleSizes[size]} ${subtitleColor} uppercase mt-2.5 font-light`}>

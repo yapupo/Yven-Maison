@@ -127,7 +127,7 @@ const FooterSection = () => {
                 Social
               </p>
               <div className="flex items-center gap-5">
-                <a href="#" className="text-cream/30 hover:text-cream transition-colors" aria-label="Instagram">
+                <a href="https://instagram.com/yven.maison" target="_blank" rel="noopener noreferrer" className="text-gold/50 hover:text-gold transition-colors" aria-label="Instagram">
                   <Instagram className="w-4 h-4" />
                 </a>
                 <a href="#" className="text-cream/30 hover:text-cream transition-colors" aria-label="Telegram">
@@ -142,13 +142,13 @@ const FooterSection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-cream/8"
+          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gold/15"
         >
-          <h3 className="font-serif text-cream/30 text-lg tracking-[0.3em]">
-            Y V E N
+          <h3 className="font-serif text-gold/50 text-lg tracking-[0.2em]">
+            YVEN
           </h3>
           <p className="font-sans text-cream/12 text-xs tracking-wider mt-4 md:mt-0 font-light">
-            © 2025 Y V E N. Todos os direitos reservados.
+            © 2025 YVEN. Todos os direitos reservados.
           </p>
         </motion.div>
       </div>
