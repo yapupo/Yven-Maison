@@ -72,7 +72,7 @@ const HeroSection = () => {
 
         {/* Typing slogan */}
         <div className="h-16 flex items-center justify-center">
-          <p className="font-sans text-cream/60 text-lg sm:text-xl md:text-2xl tracking-[0.15em] font-light">
+          <p className="font-sans text-gold-light/70 text-lg sm:text-xl md:text-2xl tracking-[0.15em] font-light">
             {displayedText}
             {!typingDone && (
               <motion.span

@@ -142,7 +142,7 @@ const FooterSection = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-cream/8"
+          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gold/15"
         >
           <h3 className="font-serif text-gold/50 text-lg tracking-[0.2em]">
             YVEN

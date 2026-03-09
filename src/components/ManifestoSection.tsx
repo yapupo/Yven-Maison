@@ -35,7 +35,7 @@ const ManifestoSection = () => {
             <h2 className="font-serif text-forest text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide">
               Vestir é um ato
               <br />
-              <span className="italic">de pertencimento.</span>
+              <span className="italic text-gold">de pertencimento.</span>
             </h2>
           </motion.div>
 
