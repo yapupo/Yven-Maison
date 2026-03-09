@@ -127,7 +127,7 @@ const FooterSection = () => {
                 Social
               </p>
               <div className="flex items-center gap-5">
-                <a href="#" className="text-cream/30 hover:text-cream transition-colors" aria-label="Instagram">
+                <a href="https://instagram.com/yven.maison" target="_blank" rel="noopener noreferrer" className="text-gold/50 hover:text-gold transition-colors" aria-label="Instagram">
                   <Instagram className="w-4 h-4" />
                 </a>
                 <a href="#" className="text-cream/30 hover:text-cream transition-colors" aria-label="Telegram">

@@ -77,7 +77,7 @@ const ManifestoSection = () => {
           >
             <img
               src={manifesto2}
-              alt="Y V E N — texturas e materialidade"
+              alt="YVEN — texturas e materialidade"
               className="w-full h-full object-cover"
               loading="lazy"
             />

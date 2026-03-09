@@ -6,6 +6,7 @@ import YvenLogo from "./YvenLogo";
 
 const fullSlogan = "Refúgio da Infância. Descubra.";
 
+
 const HeroSection = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [typingDone, setTypingDone] = useState(false);

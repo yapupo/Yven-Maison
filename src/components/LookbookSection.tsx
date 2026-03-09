@@ -44,7 +44,7 @@ const LookbookItem = ({
       >
         <motion.img
           src={item.src}
-          alt={`Y V E N — ${item.concept}`}
+          alt={`YVEN — ${item.concept}`}
           className="w-full h-full object-cover"
           animate={{ scale: hovered ? 1.05 : 1 }}
           transition={{ duration: 0.6 }}
