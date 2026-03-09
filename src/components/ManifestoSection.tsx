@@ -46,7 +46,7 @@ const ManifestoSection = () => {
             className="lg:col-span-5 flex items-end"
           >
             <p className="font-sans text-forest/50 text-sm md:text-base leading-relaxed tracking-wide font-light">
-              Cada peça Y V E N nasce da intenção de acompanhar — não definir —
+              Cada peça YVEN nasce da intenção de acompanhar — não definir —
               quem a veste. Do primeiro toque ao último olhar no espelho,
               acreditamos que conforto e design são indissociáveis.
             </p>
