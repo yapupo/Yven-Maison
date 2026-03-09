@@ -144,11 +144,11 @@ const FooterSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-cream/8"
         >
-          <h3 className="font-serif text-cream/30 text-lg tracking-[0.3em]">
-            Y V E N
+          <h3 className="font-serif text-gold/50 text-lg tracking-[0.2em]">
+            YVEN
           </h3>
           <p className="font-sans text-cream/12 text-xs tracking-wider mt-4 md:mt-0 font-light">
-            © 2025 Y V E N. Todos os direitos reservados.
+            © 2025 YVEN. Todos os direitos reservados.
           </p>
         </motion.div>
       </div>
