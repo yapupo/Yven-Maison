@@ -41,7 +41,7 @@ const Navbar = () => {
             onClick={() => handleNavClick("#hero")}
             className="text-cream font-serif text-xl tracking-[0.45em] font-light"
           >
-            Y V E N
+            YVEN
           </button>
 
           <div className="hidden md:flex items-center gap-10">
