@@ -38,9 +38,7 @@ const LookbookItem = ({
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className={`overflow-hidden ${
-          index % 3 === 0 ? "aspect-[3/4]" : index % 3 === 1 ? "aspect-[4/3]" : "aspect-square"
-        }`}
+        className="overflow-hidden aspect-[3/4]"
       >
         <motion.img
           src={item.src}
