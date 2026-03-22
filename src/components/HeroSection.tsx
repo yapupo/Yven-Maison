@@ -1,9 +1,29 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useEffect, useRef } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
 import YvenLogo from "./YvenLogo";
 
 const HeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const animate = () => {
+      if (!video.duration) return;
+      const progress = (video.currentTime % video.duration) / video.duration;
+      // Slowly pan from bottom (showing body) to top (showing face)
+      // object-position y goes from 80% to 20%
+      const yPos = 80 - progress * 60;
+      video.style.objectPosition = `center ${yPos}%`;
+      requestAnimationFrame(animate);
+    };
+
+    const frameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frameId);
+  }, []);
 
   const handleScrollDown = () => {
     const el = document.querySelector("#manifesto");
@@ -18,11 +38,13 @@ const HeroSection = () => {
       {/* Background video */}
       <div className="absolute inset-0">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-cover opacity-20"
+          style={{ objectPosition: "center 80%" }}
           src={heroVideo}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-forest/70 via-forest/50 to-forest" />
