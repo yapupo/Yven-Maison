@@ -52,8 +52,15 @@
 
 @layer base {
   * {
-    @apply border-border;
+    /* Removido o border-border global para evitar linhas em imagens */
     cursor: none;
+  }
+
+  /* Aplica a borda apenas onde for necessário ou reseta para imagens */
+  img {
+    border: none !important;
+    display: block;
+    vertical-align: middle;
   }
 
   body {
