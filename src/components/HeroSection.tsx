@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { useEffect, useState } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
 import YvenLogo from "./YvenLogo";
-
-const fullSlogan = "";
-
 
 const HeroSection = () => {
 
