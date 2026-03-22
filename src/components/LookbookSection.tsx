@@ -8,12 +8,12 @@ import lookbook5 from "@/assets/lookbook-5.jpg";
 import lookbook6 from "@/assets/lookbook-6.jpg";
 
 const lookbookItems = [
-  { src: lookbook1, concept: "Jardim Secreto", collection: "Essentials" },
-  { src: lookbook2, concept: "Primeira Luz", collection: "Infância" },
-  { src: lookbook3, concept: "Ninho Quente", collection: "Juventude" },
-  { src: lookbook4, concept: "Algodão Orgânico", collection: "Materialidade" },
-  { src: lookbook5, concept: "Campo Dourado", collection: "Lifestyle" },
-  { src: lookbook6, concept: "Primeiros Passos", collection: "Bebê" },
+  { src: lookbook1, concept: "Elegância Pura", collection: "Essentials" },
+  { src: lookbook2, concept: "Noir Classique", collection: "Atelier" },
+  { src: lookbook3, concept: "Jardim de Luz", collection: "Primavera" },
+  { src: lookbook4, concept: "Joie de Vivre", collection: "Celebração" },
+  { src: lookbook5, concept: "Héritage", collection: "Couture" },
+  { src: lookbook6, concept: "Nuit Étoilée", collection: "Clássicos" },
 ];
 
 const LookbookItem = ({
