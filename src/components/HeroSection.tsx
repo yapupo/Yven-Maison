@@ -51,19 +51,7 @@ const HeroSection = () => {
           <YvenLogo variant="light" size="lg" />
         </motion.div>
 
-        {/* Typing slogan */}
-        <div className="h-16 flex items-center justify-center">
-          <p className="font-sans text-gold-light/70 text-lg sm:text-xl md:text-2xl tracking-[0.15em] font-light">
-            {displayedText}
-            {!typingDone && (
-              <motion.span
-                animate={{ opacity: [1, 0] }}
-                transition={{ duration: 0.6, repeat: Infinity, repeatType: "reverse" }}
-                className="inline-block w-[2px] h-5 bg-cream/50 ml-1 align-middle"
-              />
-            )}
-          </p>
-        </div>
+        {/* Typing slogan removed */}
       </div>
 
       {/* Scroll indicator */}
