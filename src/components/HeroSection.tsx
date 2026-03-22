@@ -11,11 +11,11 @@ const HeroSection = () => {
     const video = videoRef.current;
     if (!video) return;
 
+    video.playbackRate = 0.5;
+
     const animate = () => {
       if (!video.duration) return;
       const progress = (video.currentTime % video.duration) / video.duration;
-      // Slowly pan from bottom (showing body) to top (showing face)
-      // object-position y goes from 80% to 20%
       const yPos = 80 - progress * 60;
       video.style.objectPosition = `center ${yPos}%`;
       requestAnimationFrame(animate);

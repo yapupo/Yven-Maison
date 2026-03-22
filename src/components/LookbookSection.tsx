@@ -38,14 +38,12 @@ const LookbookItem = ({
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className={`overflow-hidden ${
-          index % 3 === 0 ? "aspect-[3/4]" : index % 3 === 1 ? "aspect-[4/3]" : "aspect-square"
-        }`}
+        className="overflow-hidden aspect-[3/4]"
       >
         <motion.img
           src={item.src}
           alt={`YVEN — ${item.concept}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
           animate={{ scale: hovered ? 1.05 : 1 }}
           transition={{ duration: 0.6 }}
           loading="lazy"
@@ -92,7 +90,7 @@ const LookbookSection = () => {
               Lookbook
             </p>
             <h2 className="font-serif text-cream text-3xl md:text-4xl tracking-wide">
-              Concept
+              Conceito
             </h2>
           </div>
           <p className="hidden md:block text-cream/20 font-sans text-xs tracking-[0.3em] uppercase font-light">
