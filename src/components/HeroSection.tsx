@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
 import YvenLogo from "./YvenLogo";
 
-const fullSlogan = "O Padrão Absoluto. Sem Concessões.";
+const fullSlogan = "";
 
 
 const HeroSection = () => {
