@@ -1,32 +1,9 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { useEffect, useState } from "react";
 import heroVideo from "@/assets/hero-video.mp4";
 import YvenLogo from "./YvenLogo";
 
-const fullSlogan = "O Padrão Absoluto. Sem Concessões.";
-
-
 const HeroSection = () => {
-  const [displayedText, setDisplayedText] = useState("");
-  const [typingDone, setTypingDone] = useState(false);
-
-  useEffect(() => {
-    const startDelay = setTimeout(() => {
-      let i = 0;
-      const interval = setInterval(() => {
-        if (i < fullSlogan.length) {
-          setDisplayedText(fullSlogan.slice(0, i + 1));
-          i++;
-        } else {
-          clearInterval(interval);
-          setTypingDone(true);
-        }
-      }, 60);
-      return () => clearInterval(interval);
-    }, 2000);
-    return () => clearTimeout(startDelay);
-  }, []);
 
   const handleScrollDown = () => {
     const el = document.querySelector("#manifesto");
@@ -70,19 +47,7 @@ const HeroSection = () => {
           <YvenLogo variant="light" size="lg" />
         </motion.div>
 
-        {/* Typing slogan */}
-        <div className="h-16 flex items-center justify-center">
-          <p className="font-sans text-gold-light/70 text-lg sm:text-xl md:text-2xl tracking-[0.15em] font-light">
-            {displayedText}
-            {!typingDone && (
-              <motion.span
-                animate={{ opacity: [1, 0] }}
-                transition={{ duration: 0.6, repeat: Infinity, repeatType: "reverse" }}
-                className="inline-block w-[2px] h-5 bg-cream/50 ml-1 align-middle"
-              />
-            )}
-          </p>
-        </div>
+        {/* Typing slogan removed */}
       </div>
 
       {/* Scroll indicator */}

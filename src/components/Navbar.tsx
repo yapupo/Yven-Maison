@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import yvenLogo from "@/assets/yven-logo.png";
 
 const navLinks = [
   { label: "Conceito", href: "#manifesto" },
@@ -39,9 +40,10 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
           <button
             onClick={() => handleNavClick("#hero")}
-            className="text-cream font-serif text-xl tracking-[0.25em] font-light"
+            className="flex items-center gap-3"
           >
-            YVEN
+            <img src={yvenLogo} alt="YVEN" className="w-8 h-8 rounded-full" />
+            <span className="text-cream font-serif text-lg tracking-[0.25em] font-light">YVEN</span>
           </button>
 
           <div className="hidden md:flex items-center gap-10">
