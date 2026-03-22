@@ -42,7 +42,7 @@ const Navbar = () => {
             onClick={() => handleNavClick("#hero")}
             className="flex items-center gap-3"
           >
-            <img src={yvenLogo} alt="YVEN" className="w-8 h-8 rounded-full" />
+            <img src={yvenLogo} alt="YVEN" className="w-8 h-8 rounded-full object-contain" />
             <span className="text-cream font-serif text-lg tracking-[0.25em] font-light">YVEN</span>
           </button>
 
