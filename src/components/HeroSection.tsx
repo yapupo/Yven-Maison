@@ -8,25 +8,6 @@ const fullSlogan = "";
 
 
 const HeroSection = () => {
-  const [displayedText, setDisplayedText] = useState("");
-  const [typingDone, setTypingDone] = useState(false);
-
-  useEffect(() => {
-    const startDelay = setTimeout(() => {
-      let i = 0;
-      const interval = setInterval(() => {
-        if (i < fullSlogan.length) {
-          setDisplayedText(fullSlogan.slice(0, i + 1));
-          i++;
-        } else {
-          clearInterval(interval);
-          setTypingDone(true);
-        }
-      }, 60);
-      return () => clearInterval(interval);
-    }, 2000);
-    return () => clearTimeout(startDelay);
-  }, []);
 
   const handleScrollDown = () => {
     const el = document.querySelector("#manifesto");
