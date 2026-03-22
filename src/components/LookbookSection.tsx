@@ -90,7 +90,7 @@ const LookbookSection = () => {
               Lookbook
             </p>
             <h2 className="font-serif text-cream text-3xl md:text-4xl tracking-wide">
-              Concept
+              Conceito
             </h2>
           </div>
           <p className="hidden md:block text-cream/20 font-sans text-xs tracking-[0.3em] uppercase font-light">
