@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import yvenLogo from "@/assets/yven-logo.png";
 
 const navLinks = [
   { label: "Conceito", href: "#manifesto" },
